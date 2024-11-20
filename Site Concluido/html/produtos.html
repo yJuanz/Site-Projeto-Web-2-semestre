@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sugestões de Roupas com Base no Clima</title>
+</head>
+
+<body>
+
+    <div class="topo py-2">
+        <h2><span class="destaque">FRETE GRÁTIS</span> nas compras a partir de R$ 349,90 para todo o Brasil!</h2>
+    </div>
+
+    <div class="inicioContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/Outfit.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Melhores ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    
+    <!-- Formulário para entrada de cidade -->
+    <div class="container mt-4">
+        <h1>Saiba que roupa usar com base no clima!</h1>
+        <div class="form">
+                <input type="text" id="cidade" class="form-control" placeholder="Ex: São Paulo">
+                <button class="btn" onclick="buscarClima()">Obter Sugestão</button>
+        </div>
+    </div>
+
+    <!-- Exibição das informações do clima -->
+    <div id="weather-info" class="mt-4"></div>
+
+    <!-- Exibição das sugestões de roupas (imagens clicáveis) -->
+    <div id="clothing-suggestions" class="mt-4"></div>
+
+    <div class="containerimg">
+        <h1>Todos os produtos em <span class="destaque">promoção</span> no momento!</h1>
+        <div class="row">
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.usereserva.com/jaqueta-casual-sarja0071049/p?skuId=442051">
+                <img src="https://lojausereserva.vtexassets.com/arquivos/ids/7651456-1200-auto?v=638194609947830000&width=1200&height=auto&aspect=true" class="img-fluid">
+            </a>
+                <h3>JAQUETA CASUAL SARJA</h3>
+                <p1>De: R$ 999,90</p1>
+                <h3>Por: R$ 949,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <!-- Imagem 2 -->
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.usereserva.com/jaqueta-alpes-puffer0070985/p?skuId=434096&utm_campaign=shopping&gad_source=1&gclid=CjwKCAiAxea5BhBeEiwAh4t5K5OgGhI2_5YjOhniBiPotzDzfQhFhdJE7f9D3zaCxFomfBsUxOwluBoCEBQQAvD_BwE">
+                    <img src="https://lojausereserva.vtexassets.com/arquivos/ids/8590978-1200-auto?v=638536371129930000&width=1200&height=auto&aspect=true"
+                        alt="Roupas para clima frio" class="img-fluid" />
+                </a>
+                <h3>JAQUETA ALPES PUFFER</h3>
+                <p1>De: R$ 1299,99</p1>
+                <h3>Por: R$ 493,05</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.usereserva.com/parka-navy-bicolor0086731/p?skuId=543354">
+                <img src="https://lojausereserva.vtexassets.com/arquivos/ids/8759834-1200-auto?v=638618545342830000&width=1200&height=auto&aspect=true" class="img-fluid">
+            </a>
+                <h3>PARK NAVY BICOLOR</h3>
+                <p1>De: R$ 1499,90</p1>
+                <h3>Por: R$ 1424,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.usereserva.com/jaqueta-melhor-do-mundo0082808/p?skuId=516830">
+                <img src="https://lojausereserva.vtexassets.com/arquivos/ids/8611210-1200-auto?v=638549477671230000&width=1200&height=auto&aspect=true" class="img-fluid">
+            </a>
+                <h3>JAQUETA MELHOR DO MUNDO</h3>
+                <p1>De: R$ 2499,00</p1>
+                <h3>Por: R$ 2374,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <!-- SEGUNDA FILEIRA -->
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://mofficer.com.br/collections/masculino-polos/products/polo-m-c-m">
+                <img src="https://mofficer.com.br/cdn/shop/products/WhatsAppImage2023-03-27at16.19.02_1.jpg?v=1710526736&width=600" class="img-fluid">
+            </a>
+                <h3>POLO BASIC PINK</h3>
+                <p1>De: R$ 189,90</p1>
+                <h3>Por: R$ 159,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://mofficer.com.br/products/polo-m-c-basic-casual?pr_prod_strat=e5_desc&pr_rec_id=a4e776aab&pr_rec_pid=7099233763443&pr_ref_pid=7099233665139&pr_seq=uniform">
+                <img src="https://mofficer.com.br/cdn/shop/products/129008019-500-1.jpg?v=1677159965" class="img-fluid">
+            </a>
+                <h3>POLO BASIC BLACK</h3>
+                <p1>De: R$ 189,90</p1>
+                <h3>Por: R$ 159,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://mofficer.com.br/collections/masculino-polos/products/polo-m-c-m">
+                    <img src="https://mofficer.com.br/cdn/shop/products/WhatsAppImage2023-03-27at16.19.04.jpg?v=1715101350" class="img-fluid">
+                </a>
+                <h3>POLO BASIC GRAY</h3>
+                <p1>De: R$ 189,90</p1>
+                <h3>Por: R$ 109,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+            
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://mofficer.com.br/products/polo-m-c-basic?pr_prod_strat=e5_desc&pr_rec_id=ec0b86381&pr_rec_pid=7099233665139&pr_ref_pid=7099233599603&pr_seq=uniform">
+                <img src="https://mofficer.com.br/cdn/shop/products/129008018-1.jpg?v=1676658810" class="img-fluid">
+            </a>
+                <h3>POLO BASIC WHITE</h3>
+                <p1>De: R$ 189,90</p1>
+                <h3>Por: R$ 119,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <!-- TERCEIRA FILEIRA -->
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/calca-jeans-straight-flex-super-stone-22444-c052/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/488966/22444_C052_1-CJNS-RETA-ESP-MED.jpg?v=638660943302030000" class="img-fluid">
+                </a>
+                <h3>CALÇA JEANS STRAIGHT</h3>
+                <p1>De: R$ 259,90</p1>
+                <h3>Por: R$ 179,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/calca-jeans-comfort-black-21070-c050/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/452163/21070_C050_1-CJNS-COMF-ESP-ESCURA.jpg?v=638324779138530000" class="img-fluid">
+                </a>
+                <h3>CALÇA JEANS COMFORT</h3>
+                <p1>De: R$ 189,90</p1>
+                <h3>Por: R$ 149,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/calca-chino-flex-verde-musgo-22098-c017/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/475312/22098_C017_1-CFSH-CHI-FLEX.jpg?v=638527806170570000" class="img-fluid">
+                </a>
+                <h3>CALÇA CHINO FLEX VERDE</h3>
+                <p1>De: R$ 354,90</p1>
+                <h3>Por: R$ 219,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/calca-jeans-straight-super-stone-21588-c052/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/454424/21588_C052_1-CJNS-RETA-ESP-MEDIO.jpg?v=638351379055900000" class="img-fluid">
+                </a>
+                <h3>CALÇA JEANS STRAIGHT</h3>
+                <p1>De: R$ 159,90</p1>
+                <h3>Por: R$ 139,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <!-- QUARTA FILEIRA -->
+            
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/bermuda-cargo-flex-chumbo-22181-c004/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/481351/22181_C004_1-BRM-CRG-PRG-FEMEA-PT-FLEX.jpg?v=638584650086700000" class="img-fluid">
+                </a>
+                <h3>BERMUDA CARGO FLEX</h3>
+                <p1>De: R$ 235,90</p1>
+                <h3>Por: R$ 199,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/short-liso-verde-militar-22250-c016/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/485514/22250_C016_1-SHT-LISO-MSC-FLEX-C--TRF.jpg?v=638634906463930000" class="img-fluid">
+                </a>
+                <h3>SHORT LISO VERDE MILITAR</h3>
+                <p1>De: R$ 105,90</p1>
+                <h3>Por: R$ 89,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/bermuda-cargo-flex-khaki-22177-c025/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/478878/22177_C025_2-BRM-CRG-PRG-MACHO-PT-FLEX.jpg?v=638567478543130000" class="img-fluid">
+                </a>
+                <h3>BERMUDA CARGO FLEX KHAKI</h3>
+                <p1>De: R$ 259,90</p1>
+                <h3>Por: R$ 199,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+
+            <div class="col-12 col-md-3 text-center">
+                <a href="https://www.taco.com.br/short-liso-azul-claro-22250-c014/p">
+                    <img src="https://taco.vtexassets.com/arquivos/ids/485509/22250_C014_1-SHT-LISO-MSC-FLEX-C--TRF.jpg?v=638634906418770000" class="img-fluid">
+                </a>
+                <h3>SHORT LISO AZUL CLARO</h3>
+                <p1>De: R$ 120,90</p1>
+                <h3>Por: R$ 99,90</h3>
+                <p2>ou em até 2x sem juros.</p2>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer mt-5">
+        <div class="container-footer">
+            <div class="footer-section">
+                <div class="mapa">
+                    <h3>MAPA DO SITE</h3>
+                    <a href="produtos.html">Melhores Produtos</a>
+                    <a href="sobrenos.html">Sobre Nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>SOBRE NÓS</h3>
+                <p>Somos um site dedicado a oferecer as melhores ofertas de moda masculina com qualidade e estilo.</p>
+                <p>Conheça nosso catálogo de roupas, acessórios e muito mais.</p>
+                <p>Todas as roupas são de lojas confiáveis.</p>
+            </div>
+            <div class="footer-section">
+                <h3>FALE CONOSCO</h3>
+                <p>Email: outfitelegante@gmail.com</p>
+                <p>Telefone: 11 5442-6825</p>
+                <p>Horário de atendimento: 9hrs às 17hrs de segunda a sexta.</p>
+            </div>
+        </div>
+        <p class="direito">&copy; 2024 Juan. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Inclusão de scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Script do app.js -->
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

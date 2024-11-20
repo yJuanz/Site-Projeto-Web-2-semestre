@@ -1,0 +1,351 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.destaque {
+    color: red;
+}
+
+.topo h2 {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+}
+
+/* Logo do Navbar */
+.navbar-brand img {
+    width: 100px; /* Definir a largura da logo */
+    height: 100px; /* Ajustar a altura para manter proporção */
+    background-color: #000000;
+}
+
+/* Container da navegação */
+.inicioContainer {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar */
+.navbar-toggler {
+    border-color: transparent;
+    background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+/* Estilo geral para o container */
+.container {
+    text-align: center;
+}
+
+/* Título */
+.container h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Estilo para o formulário */
+.form {
+    margin: 0 auto;
+    padding: 50px;
+    display: flex; /* Usando flexbox para alinhar o input e o botão */
+    justify-content: center; /* Alinha os itens ao centro */
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 10px; /* Espaçamento entre o input e o botão */
+}
+
+/* Estilo para o input */
+.form input {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #e0e0e0; /* Fundo cinza */
+    border: none; /* Remove as bordas */
+    width: 50%; /* Largura fixa para o input */
+    border-radius: 3px;
+}
+
+/* Estilo para o botão */
+.form button {
+    background-color: black; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 16px;
+    border: none; /* Remove as bordas */
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+/* Estilo para o botão quando passa o mouse */
+.form button:hover {
+    background-color: #555; /* Escurece o botão quando o mouse passa */
+}
+
+
+.containerimg h1, .containerimg p{
+    text-align: center;
+}
+
+.containerimg h1 {
+    font-weight: bold;
+    margin: 25px;
+    font-size: 40px;  
+}
+
+.containerimg p {
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+/* Row (Flexbox para itens alinhados) */
+.containerimg .row .col-12 {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row img {
+    width: 60%;
+    height: 60%;
+}
+
+.col-12 {
+    text-align: center;
+}
+
+.col-12 h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col-12 p {
+    font-size: 12px;
+    color: #999; /* Cor mais suave para os parágrafos */
+}
+
+.col-12 p1 {
+    text-decoration: line-through;
+    font-size: 11px;
+    margin-top: -15px;
+}
+
+.col-12 p2 {
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+.col-12:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform: translateY(-10px); /* Eleva a imagem para cima */
+}
+
+
+footer {
+    color: white;
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Ajuste do layout do footer */
+.footer .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.direito {
+    text-align: center;
+}
+
+/* Links e parágrafos no footer */
+.mapa a {
+    display: block; /* Faz com que cada link ocupe uma linha inteira */
+    margin-bottom: 15px; /* Adiciona um espaçamento entre os links */
+}
+
+.mapa a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p, .footer a {
+    font-size: 12px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Seção de resultados do clima */
+#weather-info {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #e6e6e6;
+}
+
+/* Seção de sugestões de roupas */
+#clothing-suggestions {
+    text-align: center;
+    color: #000000;
+}
+
+#clothing-suggestions img {
+    margin-top: 10px;
+    width: 15%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Mensagem de erro */
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#clothing-suggestions {
+    text-align: center;
+}
+
+/* Efeito de flutuação no link (promoção) */
+#clothing-suggestions a {
+    text-decoration: none;
+    color: inherit; /* Remove a sublinhado e a cor padrão do link */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clothing-suggestions a:hover {
+    transform: translateY(-10px);  /* Sobe o link */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+}
+
+/* Efeito de flutuação na imagem */
+#clothing-suggestions a img {
+    transition: transform 0.3s ease;
+}
+
+#clothing-suggestions a:hover img {
+    transform: scale(1.05);  /* Aumenta a imagem levemente */
+}
+
+
+
+#clothing-suggestions h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#clothing-suggestions h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#clothing-suggestions p {
+    font-size: 12px;
+    color: #999; /* Cor mais suave para os parágrafos */
+}
+
+#clothing-suggestions p1 {
+    font-size: 11px;
+}
+
+#clothing-suggestions p2 {
+    font-size: 10px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    /* Ajustes no layout do footer para telas menores */
+    .footer .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  /* Alinha os itens à esquerda */
+        width: 100%;  /* Garantir que o container ocupe toda a largura */
+        padding-left: 15px;  /* Adiciona um pouco de espaço à esquerda */
+    }
+
+    .footer-section {
+        width: 100%;  /* O footer ocupará toda a largura */
+        margin-bottom: 15px;
+    }
+
+    /* Ajuste adicional para o título do footer */
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+    /* Ajuste do tamanho da imagem */
+    .principal img {
+        max-height: 400px; /* Diminui a altura máxima da imagem em telas menores */
+    }
+
+    /* Ajuste do formulário para telas menores */
+    .forms {
+        padding: 15px;
+    }
+
+    /* Ajuste de largura dos botões para telas pequenas */
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form button {
+        width: 100%; /* Faz os botões ocuparem toda a largura disponível */
+        margin: 5px 0; /* Adiciona espaçamento entre os botões */
+    }
+
+    /* Ajusta a largura dos campos de entrada */
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .form {
+        flex-direction: column; /* Em telas pequenas, o botão fica abaixo do input */
+        width: 100%; /* Garantir que o formulário ocupe toda a largura */
+    }
+
+    .form input {
+        width: 100%; /* Input ocupa toda a largura disponível */
+        margin-bottom: 10px; /* Adiciona um pequeno espaço entre o input e o botão */
+    }
+
+    .form button {
+        width: 100%; /* Botão ocupa toda a largura disponível */
+    }
+    #clothing-suggestions img {
+        margin-top: 10px;
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

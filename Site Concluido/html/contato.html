@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+
+    <div class="topo py-2">
+        <h2><span class="destaque">FRETE GRÁTIS</span> nas compras a partir de R$ 349,90 para todo o Brasil!</h2>
+    </div>
+
+    <div class="inicioContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/Outfit.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Melhores ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="principal">
+        <img src="https://static.wixstatic.com/media/c070e3_00088f265bd1486db440acc015e28abb~mv2.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/consultoria_completa.jpg">
+    
+        <div class="forms">
+            <h1><span class="destaque">Contate-nos</span></h1>
+            <form id="form-contato" onsubmit="return validarFormulario(event)">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="subject">Assunto</label>
+                <input type="text" name="subject" id="subject" placeholder="Assunto">
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" rows="7" placeholder="Nos conte tudo"></textarea>
+
+                <div class="botoes">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-section">
+                <div class="mapa">
+                    <h3>MAPA DO SITE</h3>
+                    <a href="produtos.html">Melhores Produtos</a>
+                    <a href="sobrenos.html">Sobre Nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>SOBRE NÓS</h3>
+                <p>Somos um site dedicado a oferecer as melhores ofertas de moda masculina com qualidade e estilo.</p>
+                <p>Conheça nosso catálogo de roupas, acessórios e muito mais.</p>
+                <p>Todas as roupas são de lojas confiáveis.</p>
+            </div>
+            <div class="footer-section">
+                <h3>FALE CONOSCO</h3>
+                <p>Email: outfitelegante@gmail.com</p>
+                <p>Telefone: 11 5442-6825</p>
+                <p>Horário de atendimento: 9hrs às 17hrs de segunda a sexta.</p>
+            </div>
+        </div>
+        <p class="direito">&copy; 2024 Juan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/validacao.js"></script>
+</body>
+</html>
